@@ -1,0 +1,114 @@
+@import "/src/scss/variable";
+
+.wrapper-response{
+  margin: 117px 0;
+  display: flex;
+  justify-content: center;
+}
+.carousel-container{
+  position: relative;
+}
+.response{
+  display: none;
+}
+.response.image-active{
+  display: block;
+}
+.response-container{
+  margin: 0 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .response-text{
+    text-align: center;
+  }
+  .response-svg{
+    margin: 30px 0;
+  }
+
+  .response-name{
+    font-weight: bold;
+    span{
+      margin-left: 5px;
+      color: $gray-color-text;
+      opacity: 0.5;
+    }
+  }
+  .border{
+      width: 500px;
+      border: solid 1px $gray-color;
+  }
+  .rating{
+    margin: 25px 0;
+    ngb-rating{
+      color: $rating-color;
+    }
+  }
+}
+.arrow{
+  display: flex;
+  align-items: flex-end;
+  img{
+    cursor: pointer;
+  }
+}
+.contact-container{
+  display: flex;
+}
+  .contact-left, .contact-right{
+    padding: 72px 0 100px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-left{
+    background-color: $background-color;
+  }
+  .contact-right{
+    background-color: $background-contact-color;
+  }
+  .contact-title{
+    margin: 20px 0 ;
+  }
+  .contact-svg{
+    margin-top: 20px;
+  }
+  .contact-right{
+    .contact-title, .contact-text{
+      color: $white-color;
+    }
+  }
+  .contact-svg{
+    img{
+      cursor: pointer;
+    }
+  }
+
+@media (max-width: $tablet){
+  .wrapper-response{
+    margin: 117px  40px;
+  }
+  .response-container{
+    margin: 0 50px;
+  }
+  .contact-left{
+    padding-left: 20px;
+    padding-right: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: $mobile){
+  .wrapper-response{
+    margin: 117px  20px;
+  }
+  .response-container{
+    margin: 0 0;
+  }
+  .border{
+    width: 100px !important;
+  }
+}

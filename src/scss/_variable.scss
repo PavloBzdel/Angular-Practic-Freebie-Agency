@@ -1,0 +1,154 @@
+$white-color: #FFFFFF;
+$green-color: #4CAF50;
+$gray-color: #504E4E;
+$gray-color-text: #5B5858;
+$dark-gray-color: #2E2E2E;
+$black-color: #000000;
+$light-green-color: #70BF73;
+$background-color: #FBFBFB;
+$shadow-color: #DBDBDB;
+$light-black-color: #252525;
+$text-card-color: #C2C2C2;
+$rating-color: #F7C04F;
+$background-contact-color: #70BD59;
+
+$desktop-medium: 1440px;
+$desktop-small: 1140px;
+$tablet: 900px;
+$mobile: 600px;
+$mobile-small: 340px;
+
+
+//Fonts
+
+.link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.logo {
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  letter-spacing: 4.608px;
+}
+
+.subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 1.28px;
+}
+
+.number-string {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: 2.304px;
+}
+
+.we-are-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+  letter-spacing: 2.304px;
+}
+
+.we-are-subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 42px;
+  line-height: 49px;
+  color: $gray-color;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1.26px;
+  color: $gray-color-text;
+}
+
+.card-title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.64px;
+  background-color: $white-color;
+  border: none;
+  text-transform: uppercase;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+}
+
+.work-links {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 0.832px;
+}
+
+.card-title-works-font {
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 3.072px;
+}
+
+.card-text,
+.card-text-right {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.832px;
+  color: $text-card-color;
+  max-width: 336px;
+}
+
+.response-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 31px;
+  letter-spacing: 0.896px;
+  color: $gray-color-text;
+}
+.contact-title{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2.66667px;
+}
+.contact-text{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.55556px;
+  opacity: 0.8;
+}
+footer{
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.832px;
+  color: $white-color;
+}

@@ -1,0 +1,41 @@
+@import "/src/scss/variable";
+
+.wrapper-footer{
+  background-color: $dark-gray-color;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-text{
+  padding: 142px 0 10px;
+  opacity: 0.5;
+}
+.footer-info{
+  margin-bottom: 39px;
+  opacity: 0.5;
+}
+.footer-social{
+  margin-bottom: 81px;
+  a{
+    margin-right: 20px;
+    &:nth-child(3){
+      opacity: 0.5;
+      margin-right: 0;
+    }
+    &:hover{
+      opacity: 0.2;
+    }
+  }
+}
+.copyright{
+  background-color: $light-black-color;
+}
+.copyright-container{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  opacity: 0.5;
+}

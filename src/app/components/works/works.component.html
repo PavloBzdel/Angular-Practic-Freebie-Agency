@@ -1,0 +1,51 @@
+<section class="section-works">
+  <div class="container">
+    <div class="wrapper">
+      <div class="wrapper-left">
+        <div class="work-title-container">
+          <div class="work-title we-are-title">Latest Works</div>
+          <div class="svg">
+            <svg width="45" height="2" viewBox="0 0 45 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="45" height="2" fill="#252525" />
+            </svg>
+          </div>
+        </div>
+        <div class="work-links">
+          <a href="#" class="link">ALL</a>
+          <a href="#" class="link">WEB DESIGN</a>
+          <a href="#" class="link">BRANDING</a>
+          <a href="#" class="link">PHOTOGRAPHY</a>
+          <a href="#" class="link">ILLUSTRATION</a>
+        </div>
+        <div class="works-card-container">
+          <div class="works-card" *ngFor="let item of worksCardLeft">
+            <div class="card">
+              <div class="card-img"><img [src]="item.img" alt="{{item.img}}"></div>
+              <div class="card-title card-title-works-font">{{item.title}}</div>
+              <div class="card-subtitle text">{{item.subtitle}}</div>
+              <div class="card-text">{{item.text}}</div>
+            </div>
+            <div class="card-button">
+              <button class="btn" type="button">read-more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper-right">
+        <div class="works-card-container">
+          <div class="works-card" *ngFor="let item of worksCardRight">
+            <div class="card">
+              <div class="card-img"><img [src]="item.img" alt="{{item.img}}"></div>
+              <div class="card-title-right card-title-works-font">{{item.title}}</div>
+              <div class="card-subtitle-right text">{{item.subtitle}}</div>
+              <div class="card-text-right">{{item.text}}</div>
+            </div>
+            <div class="card-button-right">
+              <button class="btn" type="button">read-more</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,120 @@
+@import "/src/scss/variable";
+
+@media (max-width: $desktop-small) {
+  .wrapper{
+    transform: translateX(-110px);
+  }
+  .text-content{
+    transform: translateX(110px);
+  }
+}
+
+@media (max-width: $mobile) {
+  .title-text{
+    text-align: center;
+    top: 0;
+    left: 20%;
+  }
+  .we-are-text{
+    flex-direction: column;
+    svg{
+      margin-bottom: 10px;
+    }
+  }
+  .img-first{
+    left: -32%;
+    top: 80%;
+  }
+  .img-green-box{
+    top: 80%;
+    left: -40%;
+  }
+  .img-second{
+    top: 150%;
+    left: -100%;
+  }
+  .text-content{
+    text-align: center;
+    flex-direction: column;
+    top: 250%;
+    svg{
+      margin-bottom: 10px;
+    }
+  }
+}
+@media (max-width: $mobile-small) {
+  .title-text{
+    left: -5%;
+  }
+  .img-first{
+    left: -60%;
+    img{
+      width: 80%;
+    }
+  }
+  .img-second{
+    top: 120%;
+    left: -185%;
+    img{
+      width: 80%;
+    }
+  }
+  .img-green-box{
+    top: 100%;
+    left: -110%;
+    img{
+      width: 70%;
+    }
+  }
+  .text-content{
+    top: 230%;
+    left: 20%;
+  }
+}
+
+
+.wrapper, .we-are-text, .text-content{
+  display: flex;
+}
+.wrapper{
+  position: relative;
+  padding: 130px 0 240px;
+}
+.we-are-subtitle{
+  margin: 4px 0 32px;
+}
+.we-are-text{
+  max-width: 285px;
+  svg{
+    margin-right: 10px;
+  }
+}
+.title-text{
+  margin-top: 100px;
+  position: absolute;
+  transform: translateX(160px);
+  z-index: 3;
+}
+.img{
+  position: absolute;
+}
+.img-first{
+  z-index: 2;
+  transform: translate(340px);
+}
+.img-green-box{
+  transform: translate(580px, 50px);
+  z-index: 1;
+}
+.img-second{
+  transform: translate(790px, 150px);
+}
+.text-content{
+  max-width: 285px;
+  position: absolute;
+  right: 50px;
+  bottom: -200px;
+  svg{
+    margin-right: 10px;
+  }
+}

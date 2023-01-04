@@ -1,0 +1,116 @@
+@import "/src/scss/variable";
+
+@media (max-width: $desktop-small) {
+  .services-card{
+    width: 350px;
+  }
+  .services-title{
+    margin-left: 70px;
+  }
+  .services-wrapper{
+    margin-left: 30px;
+  }
+  .services-card{
+    &:nth-child(2){
+       margin: 85px 15px 136px;
+    }
+  }
+}
+
+@media (max-width: $tablet){
+  .services-wrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-title{
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .services-card{
+    &:nth-child(1){
+      margin: 40px 0 0;
+    }
+    &:nth-child(2){
+      margin: 40px 0;
+    }
+    &:nth-child(3){
+      margin: 0 0 40px;
+    }
+  }
+}
+
+@media (max-width: $mobile){
+  .services-title{
+    margin: 270px 0 0;
+  }
+  .services-card{
+    width: 260px;
+  }
+  .services-wrapper{
+    margin: 0;
+  }
+}
+.section-services {
+  margin-top: 400px;
+  padding-top: 150px;
+  background-color: $background-color;
+}
+
+.services-card {
+  display: flex;
+  margin: 85px 0 136px;
+  max-width: 373px;
+  &:nth-child(2){
+    margin: 85px 15px 136px;
+  }
+}
+
+.services-wrapper {
+  display: flex;
+}
+
+.card-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  padding: 45px;
+  background-color: $white-color;
+  position: relative;
+  display: inline-block;
+
+  &:before {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: $green-color;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover {
+    scale: 1;
+    cursor: pointer;
+
+    &:before {
+      width: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+.card-content {
+  margin: 19px 0;
+}
+
+.card-title-icon {
+  padding: 13px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px $shadow-color;
+}
+

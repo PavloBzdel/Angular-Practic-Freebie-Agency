@@ -1,0 +1,47 @@
+<section class="section-contact">
+  <div class="container">
+    <div class="wrapper-response">
+      <div class="response-arrow-left arrow">
+        <div class="svg" (click)="onPrevClick()">
+          <img src="/assets/icon/contact/arrow-prev.svg" alt="arrow">
+        </div>
+      </div>
+      <div class="carousel-container" *ngIf="response && response.length > 0">
+        <div class="response" *ngFor="let item of response; let i = index"
+          [ngClass]="{'image-active': selectedIndex === i}">
+          <div class="response-container">
+            <div class="response-text">{{item.text}}</div>
+            <div class="response-svg">
+              <img src="/assets/icon/contact/quote-hand-drawn-symbol.svg" alt="icon">
+            </div>
+            <div class="response-name">{{item.name}}<span>{{item.rank}}</span></div>
+            <div class="rating">
+              <ngb-rating [max]="5" [readonly]="false" class="rating">
+              </ngb-rating>
+            </div>
+            <div class="border"></div>
+          </div>
+        </div>
+      </div>
+      <div class="response-arrow-right arrow">
+        <div class="svg" (click)="onNextClick()">
+          <img src="/assets/icon/contact/arrow-next.svg" alt="arrow">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="contact-container">
+  <div class="contact-left">
+    <div class="contact-icon"><img src="/assets/icon/contact/briefcase.svg" alt="icon briefcase"></div>
+    <div class="contact-title">Want to work together?</div>
+    <div class="contact-text">Amazing. Tell us about your project!</div>
+    <div class="contact-svg"><img src="/assets/icon/contact/arrow-next.svg" alt="arrow"></div>
+  </div>
+  <div class="contact-right">
+    <div class="contact-icon"><img src="/assets/icon/contact/mail.svg" alt="icon mail"></div>
+    <div class="contact-title">Contact us</div>
+    <div class="contact-text">Get in touch</div>
+    <div class="contact-svg"><img src="/assets/icon/contact/arrow-next.svg" alt="arrow"></div>
+  </div>
+</div>

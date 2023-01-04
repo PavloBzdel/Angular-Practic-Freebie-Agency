@@ -1,0 +1,22 @@
+<section class="section-team">
+  <div class="container">
+    <div class="wrapper">
+      <div class="team-title">
+        <div class="work-title we-are-title">The Team</div>
+          <div class="svg">
+            <svg width="45" height="2" viewBox="0 0 45 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="45" height="2" fill="#252525" />
+            </svg>
+          </div>
+      </div>
+      <div class="team-card-container">
+        <div class="card" *ngFor="let item of teamCard">
+          <div class="img"><img [src]="item.img" [alt]="item.img"></div>
+          <div class="card-name"><h1>{{item.name}}</h1></div>
+          <div class="card-rank"><h3>{{item.rank}}</h3></div>
+          <div class="card-description"><p>{{item.description}}</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
