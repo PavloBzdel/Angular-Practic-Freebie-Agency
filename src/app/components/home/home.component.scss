@@ -51,9 +51,7 @@
 
 
 .section-home {
-  background-image: url(/assets/images/Home/home-bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: $background-home-color;
   color: $white-color;
 
   .nav {
