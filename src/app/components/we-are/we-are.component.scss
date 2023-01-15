@@ -43,6 +43,9 @@
   }
 }
 @media (max-width: $mobile-small) {
+  .wrapper{
+    margin: 0 30px;
+  }
   .title-text{
     left: -5%;
   }
@@ -55,15 +58,17 @@
   .img-second{
     top: 120%;
     left: -185%;
+    width: 80%;
     img{
-      width: 80%;
+      width: 100%;
     }
   }
   .img-green-box{
+    width: 70%;
     top: 100%;
     left: -110%;
     img{
-      width: 70%;
+      width: 100%;
     }
   }
   .text-content{
